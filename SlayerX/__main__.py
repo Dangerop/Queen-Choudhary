@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from SlayerX import LOGGER, app, userbot
-from SlayerX.core.call import Slayer
-from SlayerX.misc import sudo
-from SlayerX.plugins import ALL_MODULES
-from SlayerX.utils.database import get_banned_users, get_gbanned
+from Queen-Chiudhary import LOGGER, app, userbot
+from Queen-Choudhary.core.call import Slayer
+from Queen-Choudhary.misc import sudo
+from Queen-Choudhary.plugins import ALL_MODULES
+from Queen-Choudhary.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,27 +35,27 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("SlayerX.plugins" + all_module)
-    LOGGER("SlayerX.plugins").info("Successfully Imported Modules...")
+        importlib.import_module("Queen-Choudhary.plugins" + all_module)
+    LOGGER("Queen-Choudhary.plugins").info("Successfully Imported Modules...")
     await userbot.start()
     await Slayer.start()
     try:
-        await Slayer.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Queen-Choudhary.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("SlayerX").error(
+        LOGGER("Queen-Choudhary").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
         )
         exit()
     except:
         pass
-    await Slayer.decorators()
-    LOGGER("SlayerX").info(
-        "SlayerX Music Bot Started Successfully, JOIN @SUDO_APT_UPDATE"
+    await Queen-Choudhary.decorators()
+    LOGGER("Queen-Choudhary").info(
+        "Queen-Choudhary Music Bot Started Successfully, JOIN @Great_society"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("SlayerX").info("Stopping SlayerX Music Bot...")
+    LOGGER("Queen-Choudhary").info("Stopping Queen-Choudhary Music Bot...")
 
 
 if __name__ == "__main__":
