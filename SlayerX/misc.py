@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from SlayerX.core.mongo import mongodb
+from Queen-Choudhary.core.mongo import mongodb
 
 from .logging import LOGGER
 
